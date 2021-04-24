@@ -1,20 +1,13 @@
-import * as React from 'react';
+import React from 'react';
 import {View, Button, Text, Animated} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
+import styles from '../../src/components/Header/style';
 
 function Home({navigation}) {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#03cafc',
-      }}>
-      <Text style={{fontSize: 20, color: '#ffffff', fontWeight: '800'}}>
-        Home is here!
-      </Text>
+    <View style={styles.home}>
+      <Text style={styles.text}>Home is here!</Text>
       <Button
         title="Go to Contact"
         onPress={() => navigation.navigate('Contact')}
@@ -25,16 +18,8 @@ function Home({navigation}) {
 
 function Contact({navigation}) {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#c203fc',
-      }}>
-      <Text style={{fontSize: 20, color: '#ffffff', fontWeight: '800'}}>
-        Contact is here!
-      </Text>
+    <View style={styles.contact}>
+      <Text style={styles.contact}>Contact is here!</Text>
       <Button
         title="Go to About"
         onPress={() => navigation.navigate('About')}
@@ -45,16 +30,8 @@ function Contact({navigation}) {
 
 function About({navigation}) {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#48d969',
-      }}>
-      <Text style={{fontSize: 20, color: '#ffffff', fontWeight: '800'}}>
-        About is here!
-      </Text>
+    <View style={styles.about}>
+      <Text style={styles.text}>About is here!</Text>
       <Button title="Go to Home" onPress={() => navigation.navigate('Home')} />
     </View>
   );
