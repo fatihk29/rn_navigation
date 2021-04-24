@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import {View, StyleSheet, ScrollView, Text} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {
@@ -37,7 +37,7 @@ function MyDrawer() {
       backBehavior="history"
       drawerContent={props => <CustomDrawerContent {...props} />}>
       <Drawer.Screen name="Home" component={Home} />
-      <Drawer.Screen name="Home" component={Contact} />
+      {/* <Drawer.Screen name="Home" component={Contact} /> */}
     </Drawer.Navigator>
   );
 }
