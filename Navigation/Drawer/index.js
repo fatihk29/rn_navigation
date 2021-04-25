@@ -8,7 +8,7 @@ import {
   DrawerItem,
 } from '@react-navigation/drawer';
 import Home from '../../src/screens/Home';
-import Contact from '../../src/screens/Contact';
+// import Contact from '../../src/screens/Contact';
 
 function CustomDrawerContent(props) {
   return (
