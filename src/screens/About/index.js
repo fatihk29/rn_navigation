@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet, Button} from 'react-native';
 import Header from '../../components/Header';
+import styles from './style';
 
 export default function About({navigation}) {
   return (
@@ -13,20 +14,3 @@ export default function About({navigation}) {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  content: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#48d969',
-  },
-  text: {
-    fontSize: 20,
-    color: '#ffffff',
-    fontWeight: '800',
-  },
-});
