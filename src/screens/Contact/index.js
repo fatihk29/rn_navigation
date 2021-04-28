@@ -22,11 +22,11 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#c203fc',
+    backgroundColor: '#c3fc',
   },
   text: {
     fontSize: 20,
-    color: '#ffffff',
+    color: '#fff',
     fontWeight: '800',
   },
 });
