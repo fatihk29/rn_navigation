@@ -7,9 +7,7 @@ import styles from './styles';
 function Home() {
   return (
     <View style={styles.home}>
-      <Text style={{fontSize: 20, color: '#ffffff', fontWeight: '800'}}>
-        Home is here!
-      </Text>
+      <Text style={styles.text}>Home is here!</Text>
     </View>
   );
 }
@@ -17,9 +15,7 @@ function Home() {
 function Contact({navigation}) {
   return (
     <View style={styles.contact}>
-      <Text style={{fontSize: 20, color: '#ffffff', fontWeight: '800'}}>
-        Contact is here!
-      </Text>
+      <Text style={styles.text}>Contact is here!</Text>
       <Button title="Go back" onPress={() => navigation.goBack()} />
     </View>
   );
@@ -28,9 +24,7 @@ function Contact({navigation}) {
 function About({navigation}) {
   return (
     <View style={styles.about}>
-      <Text style={{fontSize: 20, color: '#ffffff', fontWeight: '800'}}>
-        About is here!
-      </Text>
+      <Text style={styles.text}>About is here!</Text>
       <Button title="Go back" onPress={() => navigation.goBack()} />
     </View>
   );

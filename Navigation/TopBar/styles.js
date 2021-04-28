@@ -19,6 +19,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#48d969',
   },
+  text: {
+    fontSize: 20,
+    color: '#ffffff',
+    fontWeight: '800',
+  },
 });
 
 export default styles;
