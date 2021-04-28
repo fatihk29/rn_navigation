@@ -1,6 +1,7 @@
 import React from 'react';
-import {View, Text, StyleSheet, Button} from 'react-native';
+import {View, Text, Button} from 'react-native';
 import Header from '../../components/Header';
+import styles from './styles';
 
 export default function Contact({navigation}) {
   return (
@@ -13,20 +14,3 @@ export default function Contact({navigation}) {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  content: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#c3fc',
-  },
-  text: {
-    fontSize: 20,
-    color: '#fff',
-    fontWeight: '800',
-  },
-});
