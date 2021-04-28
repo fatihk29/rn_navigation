@@ -2,17 +2,11 @@ import * as React from 'react';
 import {Text, View, Button} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
-import {useSafeArea} from 'react-native-safe-area-context';
+import styles from './styles';
 
 function Home() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#03cafc',
-      }}>
+    <View style={styles.home}>
       <Text style={{fontSize: 20, color: '#ffffff', fontWeight: '800'}}>
         Home is here!
       </Text>
@@ -22,13 +16,7 @@ function Home() {
 
 function Contact({navigation}) {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#c203fc',
-      }}>
+    <View style={styles.contact}>
       <Text style={{fontSize: 20, color: '#ffffff', fontWeight: '800'}}>
         Contact is here!
       </Text>
@@ -39,13 +27,7 @@ function Contact({navigation}) {
 
 function About({navigation}) {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#48d969',
-      }}>
+    <View style={styles.about}>
       <Text style={{fontSize: 20, color: '#ffffff', fontWeight: '800'}}>
         About is here!
       </Text>
