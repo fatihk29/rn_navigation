@@ -9,8 +9,8 @@ import RouteParamsNavigation from './Navigation/RoutepParams';
 export default function App() {
   return (
     <SafeAreaProvider>
-      <BottomBarNavigation />
-      {/* <DrawerNavigation /> */}
+      <RouteParamsNavigation />
+      {/* <StackNavigator /> */}
     </SafeAreaProvider>
   );
 }
