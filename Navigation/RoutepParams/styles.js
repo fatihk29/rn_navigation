@@ -7,6 +7,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#48d969',
   },
+  customCard: {},
 });
 
 export default styles;
