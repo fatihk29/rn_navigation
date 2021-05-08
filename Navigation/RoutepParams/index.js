@@ -68,13 +68,7 @@ const Single = props => {
 
 function Home({navigation}) {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#48d969',
-      }}>
+    <View style={}>
       {data.map(x => {
         return (
           <CustomCard key={Math.random()} item={x} navigation={navigation} />
